@@ -11,6 +11,6 @@ export class MaquisService {
   constructor(private http: HttpClient) { }
 
   getMaquis(): Observable<Maquis[]> {
-    return this.http.get<Maquis[]>('http://localhost:8082/api/maquis');
+    return this.http.get<Maquis[]>('https://gseportail.herokuapp.com/api/maquis');
   }
 }
