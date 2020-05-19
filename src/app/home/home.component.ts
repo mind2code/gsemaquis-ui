@@ -9,7 +9,7 @@ import { Maquis } from '../models/maquis.model';
 })
 export class HomeComponent implements OnInit {
 
-  maquis: Maquis[];
+  public maquis: Maquis[];
 
   constructor(private maquisService: MaquisService) { }
 
