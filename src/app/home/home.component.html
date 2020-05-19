@@ -1,0 +1,123 @@
+ <!-- SubHeader =============================================== -->
+ <section class="header-video">
+    <div id="hero_video">
+        <div id="sub_content">
+            <h1>Commandez et faites vous livrer</h1>
+            <form method="post" action="list_page.html">
+                <div id="custom-search-input">
+                    <div class="input-group">
+                        <input type="text" class=" search-query" placeholder="Your Address or postal code">
+                        <span class="input-group-btn">
+                        <input type="submit" class="btn_search" value="submit">
+                        </span>
+                    </div>
+                </div>
+            </form>
+        </div><!-- End sub_content -->
+    </div>
+    <img src="../../assets/img/video_fix.png" alt="" class="header-video--media" data-video-src="" data-teaser-source="../../assets/video/intro" data-provider="" data-video-width="1920" data-video-height="960">
+    <div id="count" class="hidden-xs">
+        <ul>
+            <li><span class="number">0</span> Restaurant</li>
+            <li><span class="number">0</span> Clients servis</li>
+            <li><span class="number">0</span> Clients enregistrés</li>
+        </ul>
+    </div>
+    </section><!-- End Header video -->
+    <!-- End SubHeader ============================================ -->
+    
+   <!-- Content ================================================== -->
+         <div class="container margin_60">
+        
+         <div class="main_title">
+            <h2 class="nomargin_top" style="padding-top:0">Comment ça marche</h2>
+            <p>
+                Suivez les étapes ci-dessous, et nous nous chargeons du reste.
+            </p>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="box_home" id="one">
+                    <span>1</span>
+                    <h3>Choisir votre zone</h3>
+                    <p>
+                        Trouver les maquis proche de vous.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="box_home" id="two">
+                    <span>2</span>
+                    <h3>Choisir un maquis</h3>
+                    <p>
+                        Nous avons plus de 0 menu en ligne.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="box_home" id="three">
+                    <span>3</span>
+                    <h3>Payer par carte ou à la livraison</h3>
+                    <p>
+                       C'est simple, facile et sécurisé
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="box_home" id="four">
+                    <span>4</span>
+                    <h3>Livrer ou récupérer</h3>
+                    <p>
+                        Vous êtes fatigué? Etes-vous à la maison?
+                    </p>
+                </div>
+            </div>
+        </div><!-- End row -->
+        
+        <div id="delivery_time" class="hidden-xs">
+            <strong><span>2</span><span>5</span></strong>
+            <h4>Le temps général de nos livraisons!</h4>
+        </div>
+        </div><!-- End container -->
+            
+    <div class="white_bg">
+    <div class="container margin_60">
+        
+        <div class="main_title">
+            <h2 class="nomargin_top">Choisir parmis les plus populaires</h2>
+            <p>
+            </p>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-6">
+                <a *ngFor="let maquis of maquis.content" href="#" class="strip_list">
+                <div class="ribbon_1">Popular</div>
+                    <div class="desc">
+                        <div class="thumb_strip">
+                            <img src="../../assets/img/thumb_restaurant.jpg" alt="">
+                        </div>
+                        <div class="rating">
+                            <i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star"></i>
+                        </div>
+                        <h3>{{ maquis.raisonSociale }}</h3>
+                        <div class="type">
+                            {{ maquis.pays.libelle }}
+                        </div>
+                        <div class="location">
+                            {{ maquis.adresseMaquis }}
+                        </div>
+                    </div><!-- End desc-->
+                </a><!-- End strip_list-->
+            </div><!-- End col-md-6-->
+        </div><!-- End row -->   
+        
+        </div><!-- End container -->
+        </div><!-- End white_bg -->
+        
+       <div class="high_light">
+      	<div class="container">
+      		<h3>Choisissez parmis plus  0 Maquis</h3>
+            <a href="#">Voir tous les maquis</a>
+        </div><!-- End container -->
+      </div><!-- End hight_light -->
